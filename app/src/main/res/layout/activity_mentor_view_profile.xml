@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#0824D1"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/mentor_profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/baseline_account_circle_24"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/profile_image_desc"/>
+
+        <!-- Full Name -->
+        <TextView
+            android:id="@+id/mentor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Professional Title -->
+        <TextView
+            android:id="@+id/mentor_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Software Developer"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Years of Experience -->
+        <TextView
+            android:id="@+id/mentor_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience: 5 years"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Skills Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skills"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/mentor_skills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java, Kotlin, Android"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <!-- Availability Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Availability"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/mentor_availability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekends"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <!-- Bio Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bio"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/mentor_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passionate about mentoring junior developers and sharing knowledge in software development."
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <!-- Contact Button -->
+        <Button
+            android:id="@+id/btn_contact_mentor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Skill"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>
